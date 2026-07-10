@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Skill Test Portal</title>
+<style>
+body{
+font-family:Arial;
+background:#eef2f7;
+text-align:center;
+}
+.box{
+width:320px;
+margin:80px auto;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px #aaa;
+}
+input{
+width:90%;
+padding:10px;
+margin:10px;
+}
+button{
+padding:10px 25px;
+background:#0066cc;
+color:white;
+border:0;
+border-radius:5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<h2>Skill Test Portal</h2>
+
+<input id="user" placeholder="Username">
+
+<input id="pass" type="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+</div>
+
+<script>
+function login(){
+let u=document.getElementById("user").value;
+let p=document.getElementById("pass").value;
+
+if(u=="1900771302" && p=="Sandeep@2004"){
+window.location="download.html";
+}
+else{
+alert("Invalid Login");
+}
+}
+</script>
+
+</body>
+</html>
